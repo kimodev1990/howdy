@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "bauhaus";
+  src: url("../Bauhaus Demi.otf") format("truetype");
+}
+
+.special-size {
+  font-size: clamp(2.125rem, 1.589rem + 2.857vw, 2.25rem);
+}

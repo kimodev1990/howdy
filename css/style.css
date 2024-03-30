@@ -544,8 +544,21 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mx-auto {
@@ -569,6 +582,14 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -589,6 +610,18 @@ video {
   width: 100vw;
 }
 
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.resize-none {
+  resize: none;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -601,8 +634,28 @@ video {
   justify-content: center;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .rounded-full {
@@ -623,13 +676,50 @@ video {
   background-color: rgb(77 77 77 / var(--tw-bg-opacity));
 }
 
+.bg-buttonColor {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 234 212 / var(--tw-bg-opacity));
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
 }
 
 .pt-9 {
@@ -654,6 +744,15 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .italic {
   font-style: italic;
 }
@@ -668,6 +767,16 @@ video {
   color: rgb(143 173 174 / var(--tw-text-opacity));
 }
 
+.text-signupColor {
+  --tw-text-opacity: 1;
+  color: rgb(77 77 77 / var(--tw-text-opacity));
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 @font-face {
   font-family: "bauhaus";
 
@@ -678,9 +787,99 @@ video {
   font-size: clamp(2.125rem, 1.589rem + 2.857vw, 2.25rem);
 }
 
+.pop-title-size {
+  font-size: clamp(1.313rem, -1.5rem + 15vw, 2.25rem);
+}
+
+.change-bg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 194 178 / var(--tw-bg-opacity));
+}
+
+.title-opacity {
+  opacity: 0.5;
+}
+
+.close-sign {
+  position: absolute;
+  top: 23px;
+  right: 25px;
+  width: 30px;
+  height: 24px;
+}
+
+.left-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  transform: rotate(45deg);
+  background: #8fadae;
+}
+
+.right-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  transform: rotate(-45deg);
+  background: #8fadae;
+}
+
+.button-background {
+  background-size: 300%;
+  transition: 0.4s;
+  background-image: linear-gradient(
+    to left,
+    #ffc312,
+    #ee5a24,
+    #4d4d4d,
+    #4d4d4d
+  );
+}
+
+.button-background:hover {
+  background-position: right;
+}
+
+.button-bg-signup {
+  background-size: 300%;
+  transition: 0.4s;
+  background-image: linear-gradient(
+    to left,
+    #ffc312,
+    #ee5a24,
+    #8fadae,
+    #8fadae
+  );
+}
+
+.button-bg-signup:hover {
+  background-position: right;
+}
+
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
   .md\:bottom-5 {
     bottom: 1.25rem;
+  }
+
+  .md\:bottom-9 {
+    bottom: 2.25rem;
+  }
+
+  .md\:right-2 {
+    right: 0.5rem;
+  }
+
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .md\:mb-0 {
@@ -703,6 +902,10 @@ video {
     width: 100%;
   }
 
+  .md\:max-w-lg {
+    max-width: 32rem;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -711,8 +914,9 @@ video {
     justify-content: space-between;
   }
 
-  .md\:pb-3 {
-    padding-bottom: 0.75rem;
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .md\:text-4xl {
@@ -720,8 +924,8 @@ video {
     line-height: 2.5rem;
   }
 
-  .md\:text-6xl {
-    font-size: 3.75rem;
+  .md\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 }

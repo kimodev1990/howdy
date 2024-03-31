@@ -41,36 +41,51 @@
     </div>
     <div id="partnerships-popup" class="hidden absolute top-20">
         <div
-            class=" max-w-sm md:max-w-lg bg-bgWebsite flex flex-col justify-center items-center gap-3 px-6 md:px-24 mx-4 md:mx-0  py-14 rounded-2xl">
+            class=" max-w-sm md:max-w-lg bg-gray-700 flex flex-col justify-center items-center gap-3 px-6 md:px-24 mx-4 md:mx-0  py-14 rounded-2xl">
             <div id="close-sign-label-partner" class="close-sign md:right-2 cursor-pointer">
                 <div class="left-line"></div>
                 <div class="right-line"></div>
             </div>
-            <h1 class="text-buttonColor uppercase font-bauhaus pop-title-size px-10 text-center">partner with flow</h1>
-            <input class="bg-buttonColor placeholder  outline-none py-2 pl-4 rounded-full w-full" type="text" id="email"
-                placeholder="Email">
-            <textarea
-                class="w-full h-32 outline-none bg-buttonColor overflow-scroll overflow-x-hidden overflow-y-auto resize-none rounded-2xl px-4 pt-2"
-                placeholder="Notes..." name="notes" id="" cols="30" rows="10"></textarea>
-            <button class="w-full font-bauhaus text-xl button-bg-signup text-signupColor p-2 rounded-2xl">Sign
-                Up</button>
+            <form action="https://formsubmit.co/hakeemaseradel@gmail.com" method="POST"
+                class="flex flex-col justify-center gap-3">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_subject" value="New Email arrived!">
+                <h1 class="text-buttonColor uppercase font-bauhaus pop-title-size px-10 text-center">partner with flow
+                </h1>
+                <input class="bg-buttonColor placeholder  outline-none py-2 pl-4 rounded-full w-full" type="email"
+                    id="email-form-partners" placeholder="Email" name="email" required>
+                <textarea
+                    class="w-full h-32 outline-none bg-buttonColor overflow-scroll overflow-x-hidden overflow-y-auto resize-none rounded-2xl px-4 pt-2"
+                    placeholder="Notes..." name="notes" id="notes-form-partners" cols="30" rows="10"
+                    required></textarea>
+                <button type="submit"
+                    class="w-full font-bauhaus text-xl button-bg-signup text-signupColor p-2 rounded-2xl">Sign
+                    Up</button>
+            </form>
         </div>
     </div>
     <div id="connect-popup" class="hidden absolute top-20">
         <div
-            class=" max-w-sm md:max-w-lg bg-bgWebsite flex flex-col justify-center items-center gap-3 px-6 md:px-24 mx-4 md:mx-0  py-14 rounded-2xl">
+            class=" max-w-sm md:max-w-lg bg-gray-700 flex flex-col justify-center items-center gap-3 px-6 md:px-24 mx-4 md:mx-0  py-14 rounded-2xl">
             <div id="close-sign-label-media" class="close-sign md:right-2 cursor-pointer">
                 <div class="left-line"></div>
                 <div class="right-line"></div>
             </div>
-            <h1 class="text-buttonColor uppercase font-bauhaus pop-title-size px-10 text-center">connect with flow</h1>
-            <input class="bg-buttonColor placeholder  outline-none py-2 pl-4 rounded-full w-full" type="text" id="email"
-                placeholder="Email">
-            <textarea
-                class="w-full h-32 outline-none bg-buttonColor overflow-scroll overflow-x-hidden overflow-y-auto resize-none rounded-2xl px-4 pt-2"
-                placeholder="Notes..." name="notes" id="" cols="30" rows="10"></textarea>
-            <button class="w-full font-bauhaus text-xl button-bg-signup text-signupColor p-2 rounded-2xl">Sign
-                Up</button>
+            <form action="https://formsubmit.co/hakeemaseradel@gmail.com" method="POST"
+                class="flex flex-col justify-center gap-3">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_subject" value="New Email arrived!">
+                <h1 class="text-buttonColor uppercase font-bauhaus pop-title-size px-10 text-center">connect with flow
+                </h1>
+                <input class="bg-buttonColor placeholder  outline-none py-2 pl-4 rounded-full w-full" type="email"
+                    id="email-form-media" placeholder="Email" name="email" required>
+                <textarea
+                    class="w-full h-32 outline-none bg-buttonColor overflow-scroll overflow-x-hidden overflow-y-auto resize-none rounded-2xl px-4 pt-2"
+                    placeholder="Notes..." name="notes" id="notes-form-media" cols="30" rows="10" required></textarea>
+                <button type="submit"
+                    class="w-full font-bauhaus text-xl button-bg-signup text-signupColor p-2 rounded-2xl">Sign
+                    Up</button>
+            </form>
         </div>
     </div>
     <script src="./script.js"></script>

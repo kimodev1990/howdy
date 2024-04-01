@@ -46,20 +46,17 @@
                 <div class="left-line"></div>
                 <div class="right-line"></div>
             </div>
-            <form action="https://formsubmit.co/hakeemaseradel@gmail.com" method="POST"
-                class="flex flex-col justify-center gap-3">
-                <input type="hidden" name="_template" value="box">
-                <input type="hidden" name="_subject" value="New Email arrived!">
+            <form id="first-form" class="field flex flex-col justify-center gap-3">
                 <h1 class="text-buttonColor uppercase font-bauhaus pop-title-size px-10 text-center">partner with flow
                 </h1>
-                <input class="bg-buttonColor placeholder  outline-none py-2 pl-4 rounded-full w-full" type="email"
-                    id="email-form-partners" placeholder="Email" name="email" required>
+                <input class=" bg-buttonColor placeholder  outline-none py-2 pl-4 rounded-full w-full" type="text"
+                    id="email-form-partners" placeholder="Email" name="email">
+                <h2 id="invalid" class="text-red-500 text-sm text-right hidden">Invalid Form</h2>
                 <textarea
-                    class="w-full h-32 outline-none bg-buttonColor overflow-scroll overflow-x-hidden overflow-y-auto resize-none rounded-2xl px-4 pt-2"
-                    placeholder="Notes..." name="notes" id="notes-form-partners" cols="30" rows="10"
-                    required></textarea>
-                <button type="submit"
-                    class="w-full font-bauhaus text-xl button-bg-signup text-signupColor p-2 rounded-2xl">Sign
+                    class=" w-full h-32 outline-none bg-buttonColor overflow-scroll overflow-x-hidden overflow-y-auto resize-none rounded-2xl px-4 pt-2"
+                    placeholder="Notes..." name="notes" id="notes-form-partners" cols="30" rows="10"></textarea>
+                <h2 id="noblank" class="text-red-500 text-sm text-right hidden">Can't be Blank</h2>
+                <button class="w-full font-bauhaus text-xl button-bg-signup text-signupColor p-2 rounded-2xl">Sign
                     Up</button>
             </form>
         </div>
@@ -71,23 +68,23 @@
                 <div class="left-line"></div>
                 <div class="right-line"></div>
             </div>
-            <form action="https://formsubmit.co/hakeemaseradel@gmail.com" method="POST"
-                class="flex flex-col justify-center gap-3">
-                <input type="hidden" name="_template" value="box">
-                <input type="hidden" name="_subject" value="New Email arrived!">
+            <form id="second-form" class="flex flex-col justify-center gap-3">
                 <h1 class="text-buttonColor uppercase font-bauhaus pop-title-size px-10 text-center">connect with flow
                 </h1>
-                <input class="bg-buttonColor placeholder  outline-none py-2 pl-4 rounded-full w-full" type="email"
-                    id="email-form-media" placeholder="Email" name="email" required>
+                <input class="bg-buttonColor placeholder  outline-none py-2 pl-4 rounded-full w-full" type="text"
+                    id="email-form-media" placeholder="Email" name="email">
+                <h2 id="invalid-media" class="text-red-500 text-sm text-right hidden">Invalid Form</h2>
                 <textarea
                     class="w-full h-32 outline-none bg-buttonColor overflow-scroll overflow-x-hidden overflow-y-auto resize-none rounded-2xl px-4 pt-2"
-                    placeholder="Notes..." name="notes" id="notes-form-media" cols="30" rows="10" required></textarea>
-                <button type="submit"
-                    class="w-full font-bauhaus text-xl button-bg-signup text-signupColor p-2 rounded-2xl">Sign
+                    placeholder="Notes..." name="notes" id="notes-form-media" cols="30" rows="10"></textarea>
+                <h2 id="noblank-media" class="text-red-500 text-sm text-right hidden">Can't be Blank</h2>
+                <button class="w-full font-bauhaus text-xl button-bg-signup text-signupColor p-2 rounded-2xl">Sign
                     Up</button>
             </form>
         </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./script.js"></script>
 </body>
 

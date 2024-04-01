@@ -24,11 +24,9 @@ function sendEmail() {
   const bodySubject = `Details: <br> <br> Email Address: ${email.value} <br> Notes: ${notes.value}`;
 
   Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "hakeemaseradel@gmail.com",
-    Password: "7493249479263BD6DEEABA961BDD0C800F4A",
-    To: "hakeemaseradel@gmail.com",
-    From: "hakeemaseradel@gmail.com",
+    SecureToken: "400cb0da-0119-4637-99f1-264853788997",
+    To: "team@howdypays.com",
+    From: "team@howdypays.com",
     Subject: "New Message from Client",
     Body: bodySubject,
   }).then((message) => {
@@ -46,11 +44,9 @@ function sendEmailMEdia() {
   const bodySubjectMedia = `Details: <br> <br> Email Address: ${emailMedia.value} <br> Notes: ${notesMedia.value}`;
 
   Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "hakeemaseradel@gmail.com",
-    Password: "7493249479263BD6DEEABA961BDD0C800F4A",
-    To: "hakeemaseradel@gmail.com",
-    From: "hakeemaseradel@gmail.com",
+    SecureToken: "400cb0da-0119-4637-99f1-264853788997",
+    To: "team@howdypays.com",
+    From: "team@howdypays.com",
     Subject: "New Message from Client",
     Body: bodySubjectMedia,
   }).then((message) => {
